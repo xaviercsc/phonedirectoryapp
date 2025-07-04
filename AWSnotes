@@ -6,7 +6,7 @@ Streamlit local run and tests ;
 python -m venv myenv
 source myenv/bin/activate
 pip install -r  requirements.txt
-streamlit run main.py
+streamlit run app.py
 
 
 docker build instructions:
