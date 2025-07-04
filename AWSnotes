@@ -3,3 +3,8 @@ docker login -u meandatainc
 docker push meandatainc/phone-directory-app
 
 docker run -p 8501:8501 meandatainc/phone-directory-app
+
+docker run -e AWS_ACCESS_KEY_ID=xxxxxxxxx \
+           -e AWS_SECRET_ACCESS_KEY=xxxxxxxx \
+           -e AWS_DEFAULT_REGION=xxxxx \
+           -p 8501:8501 meandatainc/phone-directory-app
