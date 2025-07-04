@@ -33,6 +33,9 @@ aws configure
 
 
 Push Docker image  from local pc to AWS ECR repository:
+create a repository in AWS ECR : phoneappimage
+create a AWS S3 bucket : phonedirectorybucket
+
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 016963197464.dkr.ecr.us-east-1.amazonaws.com
 docker tag meandatainc/phone-directory-app:latest 016963197464.dkr.ecr.us-east-1.amazonaws.com/phoneappimage:latest
 docker push 016963197464.dkr.ecr.us-east-1.amazonaws.com/phoneappimage:latest
